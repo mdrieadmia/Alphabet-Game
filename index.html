@@ -15,52 +15,52 @@
     <main>
         <div class="min-h-screen w-full bg bg-gradient-to-b from-cyan-500 to-blue-500">
             <!-- First Screen Design -->
-            <div class="min-h-screen max-w-[700px] mx-auto flex justify-center items-center gap-10 flex-col">
+            <div id="first_screen" class="min-h-screen max-w-[700px] mx-auto flex justify-center items-center gap-10 flex-col">
                 <h1 class="uppercase text-white font-extrabold text-6xl">Alphabet Clash</h1>
                 <p class="font-bold text-white text-lg">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn btn-warning">Play Now</button>
+                <button onclick="continueGame()" class="btn btn-warning">Play Now</button>
             </div>
             <!-- Second Screen Design -->
-            <div class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center gap-8 relative hidden">
-                <div class="h-8 w-[320px] bg-blue-500 flex justify-center items-center rounded-b-xl absolute top-[70px]">
-                    <p class="font-bold text-red-200">Don't watch keyboard  while playing...</p>
-                </div>
-                <div class="w-full h-64 bg-[#ffffffc8] border-[10px] border-blue-500 rounded-2xl flex justify-center items-center">
-                    <h1 class="uppercase text-8xl font-bold">R</h1>
+            <div id="second_screen" class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center gap-8 hidden">     
+                <div class="w-full h-64 bg-[#ffffffc8] border-[10px] border-blue-500 rounded-2xl flex justify-center items-center relative">
+                    <div class="h-8 w-[380px] bg-blue-500 flex justify-center items-center rounded-b-xl absolute top-[-5px]">
+                        <p class="font-bold text-red-200">Don't watch keyboard  while playing...</p>
+                    </div>
+                    <h1 id="display_letter" class="uppercase text-8xl font-bold">R</h1>
                 </div>
                 <div>
                     <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd font-bold text-xl uppercase">q</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">w</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">e</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">r</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">t</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">y</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">u</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">i</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">o</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">p</kbd>
+                        <kbd id="q" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">q</kbd>
+                        <kbd id="w" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">w</kbd>
+                        <kbd id="e" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">e</kbd>
+                        <kbd id="r" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">r</kbd>
+                        <kbd id="t" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">t</kbd>
+                        <kbd id="y" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">y</kbd>
+                        <kbd id="u" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">u</kbd>
+                        <kbd id="i" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">i</kbd>
+                        <kbd id="o" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">o</kbd>
+                        <kbd id="p" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">p</kbd>
                       </div> 
                       <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd font-bold text-xl uppercase">a</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">s</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">d</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">f</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">g</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">h</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">j</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">k</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">l</kbd>
+                        <kbd id="a" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">a</kbd>
+                        <kbd id="s" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">s</kbd>
+                        <kbd id="d" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">d</kbd>
+                        <kbd id="f" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">f</kbd>
+                        <kbd id="g" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">g</kbd>
+                        <kbd id="h" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">h</kbd>
+                        <kbd id="j" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">j</kbd>
+                        <kbd id="k" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">k</kbd>
+                        <kbd id="l" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">l</kbd>
                       </div> 
                       <div class="flex justify-center gap-1 my-1 w-full">
-                        <kbd class="kbd font-bold text-xl uppercase">z</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">x</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">c</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">v</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">b</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">n</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">m</kbd>
-                        <kbd class="kbd font-bold text-xl uppercase">/</kbd>
+                        <kbd id="z" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">z</kbd>
+                        <kbd id="x" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">x</kbd>
+                        <kbd id="c" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">c</kbd>
+                        <kbd id="v" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">v</kbd>
+                        <kbd id="b" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">b</kbd>
+                        <kbd id="n" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">n</kbd>
+                        <kbd id="m" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">m</kbd>
+                        <kbd id="/" class="kbd font-bold text-xl uppercase bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] text-white">/</kbd>
                       </div>
                 </div>
                 <div class="space-x-10">
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <!-- Third Screen Design -->
-            <div class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center hidden">
+            <div id="third_screen" class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center hidden">
                 <div class="h-72 w-96 bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] flex flex-col justify-center items-center gap-4">
                     <h1 class="text-5xl font-bold text-white">Score : <span class="font-normal">14</span></h1>
                     <button class="btn btn-warning text-white">Play Again</button>
@@ -78,5 +78,8 @@
             </div>
         </div>
     </main>
+    <!-- Script Links -->
+    <script src="./utility/utility.js"></script>
+    <script src="./scripts/alphabet.js"></script>
 </body>
 </html>
