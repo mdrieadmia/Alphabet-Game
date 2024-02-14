@@ -4,17 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphabet Game</title>
+    <script src="https://kit.fontawesome.com/2c7411e5f0.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <main>
         <div class="min-h-screen w-full bg bg-gradient-to-b from-cyan-500 to-blue-500">
-            <!-- First Screen Start -->
-            <div class="min-h-screen max-w-[700px] mx-auto flex justify-center items-center gap-10 flex-col">
+            <!-- First Screen Design -->
+            <div class="min-h-screen max-w-[700px] mx-auto flex justify-center items-center gap-10 flex-col hidden">
                 <h1 class="uppercase text-white font-extrabold text-6xl">Alphabet Clash</h1>
                 <p class="font-bold text-white text-lg">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
                 <button class="btn btn-warning">Play Now</button>
+            </div>
+            <!-- Second Screen Design -->
+            <div class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center gap-8 relative hidden">
+                <div class="h-8 w-[320px] bg-blue-500 flex justify-center items-center rounded-b-xl absolute top-[70px]">
+                    <p class="font-bold text-red-200">Don't watch keyboard  while playing...</p>
+                </div>
+                <div class="w-full h-64 bg-[#ffffffc8] border-[10px] border-blue-500 rounded-2xl flex justify-center items-center">
+                    <h1 class="uppercase text-8xl font-bold">R</h1>
+                </div>
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd font-bold text-xl uppercase">q</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">w</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">e</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">r</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">t</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">y</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">u</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">i</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">o</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd font-bold text-xl uppercase">a</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">s</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">d</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">f</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">g</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">h</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">j</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">k</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd font-bold text-xl uppercase">z</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">x</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">c</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">v</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">b</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">n</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">m</kbd>
+                        <kbd class="kbd font-bold text-xl uppercase">/</kbd>
+                      </div>
+                </div>
+                <div class="space-x-10">
+                    <button class="btn rounded-full bg-pink-400 border-none text-white text-lg px-6">Life <i class="fa-solid fa-heart-circle-bolt"></i> <span>1</span></button>
+                    <button class="btn rounded-full bg-red-400 border-none text-white text-lg px-6">Score <i class="fa-solid fa-sack-dollar"></i> <span>1</span></button>
+                </div>
             </div>
         </div>
     </main>
