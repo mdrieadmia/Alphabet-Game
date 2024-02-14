@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alphabet Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2c7411e5f0.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body style="font-family:'Poppins', sans-serif;">
     <main>
         <div class="min-h-screen w-full bg bg-gradient-to-b from-cyan-500 to-blue-500">
             <!-- First Screen Design -->
-            <div class="min-h-screen max-w-[700px] mx-auto flex justify-center items-center gap-10 flex-col hidden">
+            <div class="min-h-screen max-w-[700px] mx-auto flex justify-center items-center gap-10 flex-col">
                 <h1 class="uppercase text-white font-extrabold text-6xl">Alphabet Clash</h1>
                 <p class="font-bold text-white text-lg">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
                 <button class="btn btn-warning">Play Now</button>
@@ -63,6 +66,14 @@
                 <div class="space-x-10">
                     <button class="btn rounded-full bg-pink-400 border-none text-white text-lg px-6">Life <i class="fa-solid fa-heart-circle-bolt"></i> <span>1</span></button>
                     <button class="btn rounded-full bg-red-400 border-none text-white text-lg px-6">Score <i class="fa-solid fa-sack-dollar"></i> <span>1</span></button>
+                </div>
+            </div>
+            <!-- Third Screen Design -->
+            <div class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center hidden">
+                <div class="h-72 w-96 bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] flex flex-col justify-center items-center gap-4">
+                    <h1 class="text-5xl font-bold text-white">Score : <span class="font-normal">14</span></h1>
+                    <button class="btn btn-warning text-white">Play Again</button>
+                    <p class="text-white font-medium text-xl">Practive will make you pro</p>
                 </div>
             </div>
         </div>
