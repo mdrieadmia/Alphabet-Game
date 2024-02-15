@@ -64,15 +64,15 @@
                       </div>
                 </div>
                 <div class="space-x-10">
-                    <button class="btn rounded-full bg-pink-400 border-none text-white text-lg px-6">Life <i class="fa-solid fa-heart-circle-bolt"></i> <span>1</span></button>
-                    <button class="btn rounded-full bg-red-400 border-none text-white text-lg px-6">Score <i class="fa-solid fa-sack-dollar"></i> <span>1</span></button>
+                    <button class="btn rounded-full bg-pink-400 border-none text-white text-lg px-6">Life <i class="fa-solid fa-heart-circle-bolt"></i> <span id="life">5</span></button>
+                    <button class="btn rounded-full bg-red-400 border-none text-white text-lg px-6">Score <i class="fa-solid fa-sack-dollar"></i> <span id="score">0</span></button>
                 </div>
             </div>
             <!-- Third Screen Design -->
             <div id="third_screen" class="min-h-screen max-w-[1000px] mx-auto flex flex-col justify-center items-center hidden">
                 <div class="h-72 w-96 bg-[#ffffff33] rounded-xl shadow-lg border border-[#ffffff4d] flex flex-col justify-center items-center gap-4">
-                    <h1 class="text-5xl font-bold text-white">Score : <span class="font-normal">14</span></h1>
-                    <button class="btn btn-warning text-white">Play Again</button>
+                    <h1 class="text-5xl font-bold text-white">Score : <span class="font-normal" id="lastScore">0</span></h1>
+                    <button onclick="playAgain()" class="btn btn-warning text-white">Play Again</button>
                     <p class="text-white font-medium text-xl">Practive will make you pro</p>
                 </div>
             </div>
